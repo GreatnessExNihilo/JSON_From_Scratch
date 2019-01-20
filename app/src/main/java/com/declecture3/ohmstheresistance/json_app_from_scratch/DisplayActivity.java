@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 
 public class DisplayActivity extends AppCompatActivity {
+    //textview to set the information on
     private TextView selectedTextView;
 
 
@@ -18,6 +19,7 @@ public class DisplayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display);
         selectedTextView= findViewById(R.id.selected_android_textview);
 
+        //get the intents passed from the androidviewholder and using the keys to get each value
         Intent intent = getIntent();
         String api = intent.getStringExtra("api");
         String name = intent.getStringExtra("name");

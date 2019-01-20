@@ -8,7 +8,8 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface AndroidService {
-
+//using the last part of the website to get the json information
+    //call from androidlist
 
     @GET("android/jsonandroid/")
     Call<AndroidList> getAndroid();

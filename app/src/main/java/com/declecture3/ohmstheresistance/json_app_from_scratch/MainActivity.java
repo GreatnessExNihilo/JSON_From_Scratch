@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //getting the retrofit instance
         Retrofit retrofit = RetrofitSingleton.getInstance();
 
         retrofit.create(AndroidService.class)
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         AndroidAdapter androidAdapter = new AndroidAdapter(myAndroidList);
 
                         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
-
+                        //put the information on the recyclerview
                         androidRecyclerView.setAdapter(androidAdapter);
                         androidRecyclerView.setLayoutManager(linearLayoutManager);
 
