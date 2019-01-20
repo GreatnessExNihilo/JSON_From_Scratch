@@ -31,7 +31,7 @@ public class AndroidViewHolder extends RecyclerView.ViewHolder {
         apiTextView.setText("API: " + api);
         nameTextView.setText("Name: " + name);
         versionTextView.setText("Version: " + version);
-
+//itemview on click listener sets the entire item in the view and not just 1 widget (not just name or not just api etc etc)
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
